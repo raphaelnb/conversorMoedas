@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
 })
 export class ConversorService {
 
-  
+  API = 'https://api.exchangerate.host/symbols'
 
   constructor() { }
 }
