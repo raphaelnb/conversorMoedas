@@ -1,4 +1,6 @@
 export interface Moeda {
-    description: string,
-    code: string
+        symbol: {
+                description: string,
+                code: string
+        }
 }

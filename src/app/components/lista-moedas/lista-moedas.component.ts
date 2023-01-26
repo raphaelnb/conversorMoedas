@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
+import { UrlHandlingStrategy } from '@angular/router';
 import { ConversorService } from '../conversor.service';
+import { Moeda } from '../moeda';
 
 @Component({
   selector: 'app-lista-moedas',
@@ -8,6 +10,15 @@ import { ConversorService } from '../conversor.service';
 })
 export class ListaMoedasComponent {
 
-  constructor(private service: ConversorService) {}
+  moedas: Moeda[] = []
 
+  private readonly API = 'https://api.exchangerate.host/symbols'
+
+  constructor(private service: ConversorService) {}
+  
+  listar() {
+    //this.listar()
+    //console.log('lista de moedas')
+    console.log(Object.values(this.API))
+  }
 }

@@ -1,0 +1,18 @@
+<button class="p-5 bg-primary" (click)="listar()">Listar Moedas</button>
+
+    <div class="container m-3">
+    <h3>Lista de Moedas</h3>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>descrição</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let mda of moedas">
+                
+            </tr>
+        </tbody>
+    </table>
+</div>
