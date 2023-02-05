@@ -12,13 +12,12 @@ export class ListaMoedasComponent {
 
   moedas: Moeda[] = []
 
+ 
   private readonly API = 'https://api.exchangerate.host/symbols'
 
   constructor(private service: ConversorService) {}
   
   listar() {
-    //this.listar()
-    //console.log('lista de moedas')
-    console.log(Object.values(this.API))
+    this.service.listar()
   }
 }

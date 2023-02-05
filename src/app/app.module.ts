@@ -8,6 +8,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import {  HttpClientModule } from '@angular/common/http';
 import { ListaMoedasComponent } from './components/lista-moedas/lista-moedas.component';
+import { ConversorService } from './components/conversor.service';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,7 @@ import { ListaMoedasComponent } from './components/lista-moedas/lista-moedas.com
     NgbModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [ConversorService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

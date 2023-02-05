@@ -9,15 +9,13 @@ import { Observable } from 'rxjs';
 export class ConversorService {
  
   private readonly API = 'https://api.exchangerate.host/symbols'
-  
-  private moedas = Object.values(this.API)
+
   
   constructor(private http: HttpClient) { }
 
-  listar(): Observable<Moeda[]> {
-    return this.http.get<Moeda[]>(this.API);
-  }
-  teste() {
-    console.log(Object.entries(this.API))
-  }
+  listar() {this.http.get<any>(this.API).subscribe(
+    moedas => {
+      console.log(moedas)
+    }
+  )}
 }
