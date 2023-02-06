@@ -9,6 +9,7 @@ import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import {  HttpClientModule } from '@angular/common/http';
 import { ListaMoedasComponent } from './components/lista-moedas/lista-moedas.component';
 import { ConversorService } from './components/conversor.service';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { ConversorService } from './components/conversor.service';
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule
   ],
   providers: [ConversorService],
   bootstrap: [AppComponent]
