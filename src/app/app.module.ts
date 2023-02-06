@@ -10,6 +10,9 @@ import {  HttpClientModule } from '@angular/common/http';
 import { ListaMoedasComponent } from './components/lista-moedas/lista-moedas.component';
 import { ConversorService } from './components/conversor.service';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatTableModule} from '@angular/material/table';   
+import {MatFormFieldModule} from '@angular/material/form-field';
+
 
 @NgModule({
   declarations: [
@@ -23,7 +26,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AppRoutingModule,
     NgbModule,
     HttpClientModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatTableModule,
+    MatFormFieldModule
   ],
   providers: [ConversorService],
   bootstrap: [AppComponent]

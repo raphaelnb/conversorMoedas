@@ -15,9 +15,7 @@ export class ConversorService {
 
   listar() {this.http.get<Moeda>(this.API).subscribe(
     moedas => {
-      for (let i in moedas.symbols) {
-        console.log(moedas.symbols.values)
-      }
+      console.log(moedas)
     }
   )}
 }
