@@ -13,9 +13,11 @@ export class ConversorService {
   
   constructor(private http: HttpClient) { }
 
-  listar() {this.http.get<any>(this.API).subscribe(
+  listar() {this.http.get<Moeda>(this.API).subscribe(
     moedas => {
-      console.log(moedas)
+      for (let i in moedas.symbols) {
+        console.log(moedas.symbols.values)
+      }
     }
   )}
 }
