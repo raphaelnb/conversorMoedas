@@ -9,4 +9,7 @@ import { NgbCollapseModule } from '@ng-bootstrap/ng-bootstrap';
 })
 export class NavBarComponent {
   isMenuCollapsed = true
+app: any;
+lista: any;
+moeda: any;
 }
